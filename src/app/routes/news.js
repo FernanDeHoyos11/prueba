@@ -4,7 +4,7 @@ module.exports = app => {
    var url = 'https://api.themoviedb.org/3/movie/550?api_key={api_key}&callback=test'
    var nurl = 'https://api.themoviedb.org/3/configuration?api_key=a650fd63b0a815e75cf22d0b805ec101'
 
-   app.get('/', (req, res)=>{
+   app.get('/lis', (req, res)=>{
     
     fetch(`https://api.themoviedb.org/4/list/1?page=1&api_key=a650fd63b0a815e75cf22d0b805ec101`)
    .then(response => response.json())
@@ -18,7 +18,7 @@ module.exports = app => {
    .catch(error => console.log('error:', error));
    })
 
-   app.get('/peli', (req,res)=>{
+   app.get('/', (req,res)=>{
     fetch(`https://api.themoviedb.org/4/list/1?page=1&api_key=a650fd63b0a815e75cf22d0b805ec101`)
    .then(response => response.json())
    .then(data => {
