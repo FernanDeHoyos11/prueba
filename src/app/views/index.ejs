@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TheMovie</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery-func.js"></script>
+<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div id="shell">
+  <div id="header">
+    <h1 id="logo"><a href="#">TheMovieD</a></h1>
+    <div id="navigation">
+      <ul>
+        <li><a class="active" href="#">HOME</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">IN THEATERS</a></li>
+        <li><a href="#">COMING SOON</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">ADVERTISE</a></li>
+      </ul>
+    </div>
+    <div id="sub-navigation">
+      <ul>
+        <li><a href="#">SHOW ALL</a></li>
+        <li><a href="#">LATEST TRAILERS</a></li>
+        <li><a href="#">TOP RATED</a></li>
+        <li><a href="#">MOST COMMENTED</a></li>
+      </ul>
+      <div id="search">
+        <form action="#" method="get" accept-charset="utf-8">
+          <label for="search-field">SEARCH</label>
+          <input type="text" name="search field"  id="search-field" class="blink search-field"  />
+          <input type="submit" value="GO!" class="search-button" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="main">
+    <div id="content">
+      <div class="box">
+        <div class="head">
+
+          <p class="text-right"><a href="#">See all</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"> <%= name[0]%></span></span> <a href="#modal"><img src="https://image.tmdb.org/t/p/w500//uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg" alt="" /></a> 
+          </div>
+          <div class="rating">
+            <p>RATING </p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span> <%= popul[0]%>
+              <a href="#openModal1">Sinopsis</a>
+             <div id="openModal1" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[0]%> </p>
+              </div>
+         </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[1]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//lFByFSLV5WDJEv3KabbdAF959F2.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING </p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[1]%> 
+             <a href="#openModal2">Sinopsis</a>
+             <div id="openModal2" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[1]%> </p>
+              </div>
+         </div>
+           </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[2]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span> <%= popul[2]%>
+              <a href="#openModal3">Sinopsis</a>
+             <div id="openModal3" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[2]%> </p>
+              </div>
+         </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[3]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//ytnhzdwtj0YfC5NVWrrPRGSGZb7.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[3]%> 
+             <a href="#openModal4">Sinopsis</a>
+             <div id="openModal4" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[3]%> </p>
+              </div>
+         </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[4]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//4q2NNj4S5dG2RLF9CpXsej7yXl.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[4]%> 
+                   <a href="#openModal5">Sinopsis</a>
+             <div id="openModal5" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[4]%> </p>
+              </div>
+         </div>
+          </div>
+        </div>
+        <div class="movie last">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[5]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[5]%> 
+            <a href="#openModal6">Sinopsis</a>
+             <div id="openModal6" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[5]%> </p>
+              </div>
+         </div> </div>
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>TOP RATED</h2>
+          <p class="text-right"><a href="#">See all</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[6]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[6]%> 
+             <a href="#openModal7">Sinopsis</a>
+             <div id="openModal7" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[6]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[7]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//eivQmS3wqzqnQWILHLc4FsEfcXP.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[7]%> 
+             <a href="#openModal8">Sinopsis</a>
+             <div id="openModal8" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[7]%> </p>
+              </div>
+         </div> </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[8]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span> <%= popul[8]%> 
+             <a href="#openModal9">Sinopsis</a>
+             <div id="openModal9" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[8]%> </p>
+              </div>
+         </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[9]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//uxzzxijgPIY7slzFvMotPv8wjKA.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[9]%>  <a href="#openModal10">Sinopsis</a>
+             <div id="openModal10" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[9]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[10]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[10]%>  <a href="#openModal11">Sinopsis</a>
+             <div id="openModal11" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[10]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie last">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[11]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//c24sv2weTHPsmDa7jEMN0m2P3RT.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[11]%>  <a href="#openModal12">Sinopsis</a>
+             <div id="openModal12" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[11]%> </p>
+              </div>
+         </div> </div>
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>MOST COMMENTED</h2>
+          <p class="text-right"><a href="#">See all</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[12]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span> <%= popul[12]%>  <a href="#openModal14">Sinopsis</a>
+             <div id="openModal14" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[12]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[13]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//fnbjcRDYn6YviCcePDnGdyAkYsB.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[13]%>  <a href="#openModal15">Sinopsis</a>
+             <div id="openModal15" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[13]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[14]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//7WfK17BXE6szXlm4WOxfswgbdsL.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span> <%= popul[14]%>  <a href="#openModal16">Sinopsisl</a>
+             <div id="openModal16" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[14]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[15]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//qttNmCib9gHhR5q0QoZ3FgmGom9.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[15]%>  <a href="#openModal17">Sinopsis</a>
+             <div id="openModal17" class="modalDialog17">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[15]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[16]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span> <%= popul[16]%>  <a href="#openModal18">Sinopsis</a>
+             <div id="openModal18" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[16]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="movie last">
+          <div class="movie-image"> <span class="play"><span class="name"><%= name[17]%></span></span> <a href="#"><img src="https://image.tmdb.org/t/p/w500//fSRb7vyIP8rQpL0I47P3qUsEKX3.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments"></span><%= popul[17]%>  <a href="#openModal19">Sinopsis</a>
+             <div id="openModal19" class="modalDialog">
+              <div>
+
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sinopsis</h2>
+            <p> <%= sinopsis[17]%> </p>
+              </div>
+         </div></div>
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+    </div>
+    <div id="news">
+      <div class="head">
+        <h3>NEWS</h3>
+        <p class="text-right"><a href="#">See all</a></p>
+      </div>
+      <div class="content">
+        <p class="date">12.04.09</p>
+        <h4>Disney's A Christmas Carol</h4>
+        <p>&quot;Disney's A Christmas Carol,&quot; a multi-sensory thrill ride re-envisioned by Academy Award&reg;-winning filmmaker Robert Zemeckis, captures... </p>
+        <a href="#">Read more</a> </div>
+      <div class="content">
+        <p class="date">11.04.09</p>
+        <h4>Where the Wild Things Are</h4>
+        <p>Innovative director Spike Jonze collaborates with celebrated author Maurice Sendak to bring one of the most beloved books of all time to the big screen in &quot;Where the Wild Things Are,&quot;...</p>
+        <a href="#">Read more</a> </div>
+      <div class="content">
+        <p class="date">10.04.09</p>
+        <h4>The Box</h4>
+        <p>Norma and Arthur Lewis are a suburban couple with a young child who receive an anonymous gift bearing fatal and irrevocable consequences.</p>
+        <a href="#">Read more</a> </div>
+    </div>
+    <div id="coming">
+      <div class="head">
+        <h3>COMING SOON<strong>!</strong></h3>
+        <p class="text-right"><a href="#">See all</a></p>
+      </div>
+      <div class="content">
+        <h4>The Princess and the Frog </h4>
+        <a href="#"><img src="css/images/coming-soon1.jpg" alt="" /></a>
+        <p>Walt Disney Animation Studios presents the musical &quot;The Princess and the Frog,&quot; an animated comedy set in the great city of New Orleans...</p>
+        <a href="#">Read more</a> </div>
+      <div class="cl">&nbsp;</div>
+      <div class="content">
+        <h4>The Princess and the Frog </h4>
+        <a href="#"><img src="css/images/coming-soon2.jpg" alt="" /></a>
+        <p>Walt Disney Animation Studios presents the musical &quot;The Princess and the Frog,&quot; an animated comedy set in the great city of New Orleans...</p>
+        <a href="#">Read more</a> </div>
+    </div>
+    <div class="cl">&nbsp;</div>
+  </div>
+  <div id="footer">
+    <p class="lf">Copyright &copy; 2010 <a href="#">SiteName</a> - All Rights Reserved</p>
+    <p class="rf">Design by <a href="http://chocotemplates.com/">ChocoTemplates.com</a></p>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<!-- END PAGE SOURCE -->
+</body>
+</html>
